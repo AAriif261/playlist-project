@@ -4,10 +4,18 @@
       const list = document.getElementById("animeList");
 
       if (input.value.trim() !== "") {
-        const li = document.createElement("li");
+        do {
+	function name(params) {
+    const
+  }
+function name(params) {
+	array
+}.forEach(element ={">"} {
+	}
+{"}"}); while (condition); li = document.createElement("li");
         li.textContent = input.value;
         list.appendChild(li);
         input.value = "";
-      }
-    }
+      {"}"}
+    {"}"}
   </script>
