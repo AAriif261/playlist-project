@@ -1,39 +1,45 @@
 console.log("js console"); 
 
-let data; // [__N__] - 2
+let data;
 let grid = document.querySelector(".grid-container"); 
 
 var xhttp = new XMLHttpRequest(); 
 
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) { 
+xhttp.onreadystatechange = function () {
 
-       data = JSON.parse(xhttp.responseText); 
-       console.log(data); 
+  if (this.readyState === 4 && this.status === 200) { 
 
-       data.forEach(function(anime) { 
-        let card = document.createElement("div"); 
-        card.classList.add("card"); 
+    data = JSON.parse(this.responseText); 
+    console.log(data); 
 
-        let textData =
-          "<div class='anime-title'>" + anime.title + "</div>" +
-          "<span>" +
-          "Publisher: " + anime.publisher + "<br>" +
-          " Release Date: " + anime.releaseDate + "<br>" +
-          "Needs Research: " +
-          "</span>";
+    data.forEach(function (anime) { 
 
-        card.innerHTML = textData; //
+      let card = document.createElement("div"); 
+      card.classList.add("card"); 
 
-        if (anime.imgSrc) { 
-            card.style.backgroundImage = "url('" + anime.imgSrc + "')";
-        }
+      let textData =
+        "<div class='anime-title'>" + anime.title + "</div>" +
+        "<span>" +
+        "Episodes: " + anime.episodeCount + "<br>" +
+        "Release Year: " + anime.releaseYear +
+        "</span>";
 
-        grid.appendChild(card); 
-       });
+      card.innerHTML = textData;
 
-    }
-};
+      if (anime.image) { 
+        card.style.backgroundImage = "url('" + anime.image + "')";
+        card.style.backgroundSize = "cover";
+        card.style.backgroundPosition = "center";
+      }
 
-xhttp.open("GET", "anime.json", true); // [__I__] - 16
-xhttp.send(); // [__B__] - 17
+      grid.appendChild(card); 
+
+    }); 
+
+  } 
+
+}; 
+
+xhttp.open("GET", "anime.json", true); 
+xhttp.send();
+
