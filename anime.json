@@ -1,107 +1,124 @@
 [
     {
-        "title": "One Piece",
-        "episodeCount": "1100+ (Ongoing)",
-        "releaseYear": "1999"
+      "title": "One Piece",
+      "episodeCount": "1100+ (Ongoing)",
+      "releaseYear": "1999",
+      "image": "https://m.media-amazon.com/images/I/81mT5LBOApL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Naruto",
-        "episodeCount": "220",
-        "releaseYear": "2002"
+      "title": "Naruto",
+      "episodeCount": "220",
+      "releaseYear": "2002",
+      "image": "https://m.media-amazon.com/images/I/81ARlnsfr0L._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Dragon Ball Super",
-        "episodeCount": "131",
-        "releaseYear": "2015"
+      "title": "Dragon Ball Super",
+      "episodeCount": "131",
+      "releaseYear": "2015",
+      "image": "https://i5.walmartimages.com/seo/Dragon-Ball-Super-Villain-Wall-Poster-22-375-x-34_07ae7dce-2712-4a73-85c8-8712bf6d350e.abd27cf5585862f565e410681ed45374.jpeg"
     },
     {
-        "title": "Chainsaw Man",
-        "episodeCount": "13",
-        "releaseYear": "2023"
+      "title": "Chainsaw Man",
+      "episodeCount": "13",
+      "releaseYear": "2023",
+      "image": "https://www.postershoppe.com/cdn/shop/files/chainsaw-man_black_framed_300x300.jpg?v=1736032756"
     },
     {
-        "title": "Black Clover",
-        "episodeCount": "170",
-        "releaseYear": "2017"
+      "title": "Black Clover",
+      "episodeCount": "170",
+      "releaseYear": "2017",
+      "image": "https://m.media-amazon.com/images/I/71yu8sC0CjL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Erased",
-        "episodeCount": "12",
-        "releaseYear": "2012"
+      "title": "Erased",
+      "episodeCount": "12",
+      "releaseYear": "2012",
+      "image": "https://m.media-amazon.com/images/I/61D8AMO5u1L._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Bleach",
-        "episodeCount": "366",
-        "releaseYear": "2004"
+      "title": "Bleach",
+      "episodeCount": "366",
+      "releaseYear": "2004",
+      "image": "https://m.media-amazon.com/images/I/71i1yiEB1iL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "JoJo's Bizarre Adventure",
-        "episodeCount": "340+ (Ongoing)",
-        "releaseYear": "2012"
+      "title": "JoJo's Bizarre Adventure",
+      "episodeCount": "340+ (Ongoing)",
+      "releaseYear": "2012",
+      "image": "https://m.media-amazon.com/images/I/81IF6cvmg8L.jpg"
     },
     {
-        "title": "My Hero Academia",
-        "episodeCount": "138",
-        "releaseYear": "2014"
+      "title": "My Hero Academia",
+      "episodeCount": "138",
+      "releaseYear": "2014",
+      "image": "https://m.media-amazon.com/images/I/81Bpnj79aRL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Code Geass",
-        "episodeCount": "50",
-        "releaseYear": "2006"
+      "title": "Code Geass",
+      "episodeCount": "50",
+      "releaseYear": "2006",
+      "image": "https://m.media-amazon.com/images/I/71z1K5hkdUL.jpg"
     },
     {
-        "title": "Cyberpunk: Edgerunners",
-        "episodeCount": "10",
-        "releaseYear": "2022"
+      "title": "Cyberpunk: Edgerunners",
+      "episodeCount": "10",
+      "releaseYear": "2022",
+      "image": "https://m.media-amazon.com/images/I/71OeoFoXILL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Dandadan",
-        "episodeCount": "12",
-        "releaseYear": "2022"
+      "title": "Dandadan",
+      "episodeCount": "12",
+      "releaseYear": "2022",
+      "image": "https://cdn.europosters.eu/image/350/posters/dandadan-season-2-i288482.jpg"
     },
     {
-        "title": "Attack on Titan",
-        "episodeCount": "85",
-        "releaseYear": "2013"
+      "title": "Attack on Titan",
+      "episodeCount": "85",
+      "releaseYear": "2013",
+      "image": "https://cdn.europosters.eu/image/1300/216782.jpg"
     },
     {
-        "title": "Pokémon",
-        "episodeCount": "1200+ (Ongoing)",
-        "releaseYear": "1999"
+      "title": "Pokémon",
+      "episodeCount": "1200+ (Ongoing)",
+      "releaseYear": "1999",
+      "image": "https://m.media-amazon.com/images/I/612F8bfniwL.jpg"
     },
     {
-        "title": "Tokyo Ghoul",
-        "episodeCount": "24",
-        "releaseYear": "2014"
+      "title": "Tokyo Ghoul",
+      "episodeCount": "24",
+      "releaseYear": "2014",
+      "image": "https://m.media-amazon.com/images/I/615UoMEsDEL.jpg"
     },
     {
-        "title": "Demon Slayer",
-        "episodeCount": "78",
-        "releaseYear": "2019"
+      "title": "Demon Slayer",
+      "episodeCount": "78",
+      "releaseYear": "2019",
+      "image": "https://storage.googleapis.com/pod_public/750/279729.jpg"
     },
     {
-        "title": "Fullmetal Alchemist: Brotherhood",
-        "episodeCount": "64",
-        "releaseYear": "2009"
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "episodeCount": "64",
+      "releaseYear": "2009",
+      "image": "https://cdn.europosters.eu/image/350/posters/fullmetal-alchemist-key-art-i160464.jpg"
     },
     {
-        "title": "Jujutsu Kaisen",
-        "episodeCount": "48",
-        "releaseYear": "2020"
+      "title": "Jujutsu Kaisen",
+      "episodeCount": "48",
+      "releaseYear": "2020",
+      "image": "https://preview.redd.it/the-jujutsu-kaisen-season-3-part-i-poster-looks-goofy-v0-pny26a834f8g1.jpeg?width=640&crop=smart&auto=webp&s=32e9c1cb183e6f64882fad5cb318096188c29973"
     },
     {
-        "title": "Gurren Lagann",
-        "episodeCount": "27",
-        "releaseYear": "2007"
+      "title": "Gurren Lagann",
+      "episodeCount": "27",
+      "releaseYear": "2007",
+      "image": "https://m.media-amazon.com/images/I/61vcXr50StL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        "title": "Tokyo Revengers",
-        "episodeCount": "50",
-        "releaseYear": "2021"
-    },
-    {
-        "title": "Boruto",
-        "episodeCount": "200+ (Ongoing)",
-        "releaseYear": "2017"
+      "title": "Tokyo Revengers",
+      "episodeCount": "50",
+      "releaseYear": "2021",
+      "image": "https://m.media-amazon.com/images/I/81a42nBNtQL._AC_UF894,1000_QL80_.jpg"
     }
-]
+  ]
+  
+  
