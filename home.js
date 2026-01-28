@@ -43,3 +43,19 @@ xhttp.onreadystatechange = function () {
 xhttp.open("GET", "anime.json", true); 
 xhttp.send();
 
+form.addEventListener("submit",function(e){
+e.preventDefault();
+let title = titleInput.value;
+let publisher = devInput.value;
+let releaseDate = releaseDateInput.value;
+let imgsrc = imgInput.value;
+let newObj = {
+imgsrc,
+"id": getNextId(),
+"title": title,
+"publisher": publisher, "releaseDate":releaseDate,
+"imgSrc":imgsrc,
+ };
+submitData(newObj);
+form.reset();
+});
