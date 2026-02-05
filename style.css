@@ -91,8 +91,10 @@
     padding: 20px;
     border-radius: 14px;
     min-height: 160px;
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+color: #fff306;
+    margin-bottom: 10px;
+     -webkit-text-stroke-width: .8px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
 
@@ -100,12 +102,16 @@
   .anime-title {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #b366ff;
+    color: #fff306;
     margin-bottom: 10px;
+     -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   }
   
   .card span {
     font-size: 0.95rem;
     line-height: 1.6;
+    
   }
+  
   
