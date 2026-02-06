@@ -1,61 +1,70 @@
-console.log("js console"); 
+let animeData = [];
+let playlist = JSON.parse(localStorage.getItem("playlist")) || [];
 
-let data;
-let grid = document.querySelector(".grid-container"); 
+const animeGrid = document.querySelector("#animeGrid");
+const playlistGrid = document.querySelector("#playlistGrid");
+const searchInput = document.querySelector("#searchInput");
 
-var xhttp = new XMLHttpRequest(); 
+fetch("anime.json")
+  .then(res => res.json())
+  .then(data => {
+    animeData = data;
+    renderAnime(animeData);
+    renderPlaylist();
+  });
 
-xhttp.onreadystatechange = function () {
+function renderAnime(list) {
+  animeGrid.innerHTML = "";
 
-  if (this.readyState === 4 && this.status === 200) { 
+  list.forEach(anime => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.style.backgroundImage = `url('${anime.image}')`;
 
-    data = JSON.parse(this.responseText); 
-    console.log(data); 
+    card.innerHTML = `
+      <div class="anime-title">${anime.title}</div>
+      <span>${anime.episodeCount} • ${anime.releaseYear}</span>
+      <button>Add to Playlist</button>
+    `;
 
-    data.forEach(function (anime) { 
+    card.querySelector("button").addEventListener("click", () => {
+      addToPlaylist(anime);
+    });
 
-      let card = document.createElement("div"); 
-      card.classList.add("card"); 
+    animeGrid.appendChild(card);
+  });
+}
 
-      let textData =
-        "<div class='anime-title'>" + anime.title + "</div>" +
-        "<span>" +
-        "Episodes: " + anime.episodeCount + "<br>" +
-        "Release Year: " + anime.releaseYear +
-        "</span>";
+function addToPlaylist(anime) {
+  if (!playlist.find(item => item.title === anime.title)) {
+    playlist.push(anime);
+    localStorage.setItem("playlist", JSON.stringify(playlist));
+    renderPlaylist();
+  }
+}
 
-      card.innerHTML = textData;
+function renderPlaylist() {
+  playlistGrid.innerHTML = "";
 
-      if (anime.image) { 
-        card.style.backgroundImage = "url('" + anime.image + "')";
-        card.style.backgroundSize = "cover";
-        card.style.backgroundPosition = "center";
-      }
+  playlist.forEach(anime => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.style.backgroundImage = `url('${anime.image}')`;
 
-      grid.appendChild(card); 
+    card.innerHTML = `
+      <div class="anime-title">${anime.title}</div>
+      <span>${anime.episodeCount} • ${anime.releaseYear}</span>
+    `;
 
-    }); 
+    playlistGrid.appendChild(card);
+  });
+}
 
-  } 
-
-}; 
-
-xhttp.open("GET", "anime.json", true); 
-xhttp.send();
-
-form.addEventListener("submit",function(e){
-e.preventDefault();
-let title = titleInput.value;
-let publisher = devInput.value;
-let releaseDate = releaseDateInput.value;
-let imgsrc = imgInput.value;
-let newObj = {
-imgsrc,
-"id": getNextId(),
-"title": title,
-"publisher": publisher, "releaseDate":releaseDate,
-"imgSrc":imgsrc,
- };
-submitData(newObj);
-form.reset();
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase();
+  const filtered = animeData.filter(anime =>
+    anime.title.toLowerCase().includes(value)
+  );
+  renderAnime(filtered);
 });
+);
