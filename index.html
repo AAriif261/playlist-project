@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Anime Watchlist</title>
+  <title>Anime Playlist</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -10,19 +10,23 @@
   <section class="hero">
     <div class="overlay">
       <h1>WATCH LIST</h1>
-      <p>Add any anime you want</p>
+      <p>Build your anime Playlist</p>
     </div>
   </section>
 
   <section class="add-anime">
-    <h2> Add Anime</h2>
-    <input type="text" id="animeInput" placeholder="Enter anime name..." />
-    <button>Add</button>
+    <h2>Search Anime</h2>
+    <input type="text" id="searchInput" placeholder="Search anime..." />
   </section>
 
   <section class="watchlist">
-    <h2>Shows you could add to your list!</h2>
-    <div class="grid-container"></div>
+    <h2>Our Anime</h2>
+    <div class="grid-container" id="animeGrid"></div>
+  </section>
+
+  <section class="watchlist">
+    <h2>YOUR PLAYLIST</h2>
+    <div class="grid-container" id="playlistGrid"></div>
   </section>
 
   <script src="home.js"></script>
