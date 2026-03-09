@@ -67,4 +67,3 @@ searchInput.addEventListener("input", () => {
   );
   renderAnime(filtered);
 });
-);
